@@ -29,7 +29,21 @@ function inView(currentSection) {
  *
 */
 
-// build the nav
+//build navigation bar and give each 'li' element a new Id (listId)
+function buildmenu() {
+  let count = 1;
+  for (let i = 0; i < sections.length; i++) {
+    let datanav = document.getElementsByTagName("section")[i].getAttribute("data-nav");
+    let listId = "newid" + [count];
+    const newli = document.createElement('li');
+    newli.innerHTML="<a href=''>" + datanav + "</a>";
+    newli.setAttribute("id", listId);
+    newli.setAttribute("class", "menu__link");
+    count +=1;
+    const list = document.querySelector('#navbar__list');
+    list.appendChild(newli);
+  }
+}
 
 
 // Add class 'active' to section when near top of viewport
