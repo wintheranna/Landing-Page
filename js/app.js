@@ -87,3 +87,4 @@ buildmenu();
 scroll();
 
 // Set sections as active
+active();
