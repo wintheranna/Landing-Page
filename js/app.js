@@ -81,6 +81,7 @@ function scroll() {
 */
 
 // Build menu
+buildmenu();
 
 // Scroll to section on link click
 
