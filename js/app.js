@@ -84,5 +84,6 @@ function scroll() {
 buildmenu();
 
 // Scroll to section on link click
+scroll();
 
 // Set sections as active
