@@ -46,7 +46,20 @@ function buildmenu() {
 }
 
 
-// Add class 'active' to section when near top of viewport
+// set section to active
+function active() {
+  window.addEventListener('scroll', () => {
+    for (let x = 1; x <= sections.length; x++) {
+      let currentSection = document.querySelector("#section" + x);
+      let isInViewport = inView(currentSection);
+      if (isInViewport) {
+        let activeElem = document.getElementsByClassName('active-class');
+        activeElem[0].classList.remove('active-class');
+        currentSection.classList.add("active-class");
+      }
+    }
+  });
+}
 
 
 // Scroll to anchor ID using scrollTO event
