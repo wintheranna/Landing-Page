@@ -62,7 +62,16 @@ function active() {
 }
 
 
-// Scroll to anchor ID using scrollTO event
+// scroll to ID and prevent page reload
+function scroll() {
+  for (let i = 1; i <= sections.length; i++) {
+    let liElement = document.getElementById("newid" + i);
+    liElement.addEventListener('click', (event) => {
+      event.preventDefault();
+      document.querySelector("#section" + i).scrollIntoView({behavior: "smooth"});
+    });
+  }
+}
 
 
 /**
