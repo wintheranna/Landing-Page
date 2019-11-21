@@ -73,6 +73,8 @@ section {
 
 .navbar__menu li {
     display: inline-block;
+    padding: 10px;
+    color: white;
 }
 
 .navbar__menu .menu__link {
