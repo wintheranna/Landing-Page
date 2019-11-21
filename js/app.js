@@ -16,8 +16,12 @@ const sections = document.getElementsByClassName('landing__container');
  * Start Helper Functions
  *
 */
-
-
+// check if section is in viewport
+function inView(currentSection) {
+  let bounding = currentSection.getBoundingClientRect();
+    return (
+    bounding.top <= (window.innerHeight || document.documentElement.clientHeight));
+}
 
 /**
  * End Helper Functions
