@@ -77,6 +77,14 @@ section {
     color: white;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .navbar__menu .menu__link {
     display: block;
     padding: 1em;
